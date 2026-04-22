@@ -1,0 +1,108 @@
+NANITE SURVIVORS — ENEMY SHIP ROSTER
+======================================
+
+SIZE: SMALL
+-----------
+
+  REAPER          | Faction: Red  | AI: Chase
+                  | Curved, sharp swept wings. Aggressive profile built for direct pursuit.
+
+  SPECTER         | Faction: Red  | AI: Interceptor
+                  | Triangle silhouette with elongated nacelles along the wings and centerline.
+                  | Conservative design — reliable rather than flashy.
+
+  SPECTER-B       | Faction: Green
+
+  BANSHEE         | Faction: Red  | AI: Chase
+                  | Sharp forward wings with a wider stance than the Reaper. Built for speed
+                  | and direct engagement.
+
+  BANSHEE-B       | Faction: Baby Blue
+
+  RAVAGER         | Faction: Red  | AI: Chase
+                  | Functional tube-style fuselage flanked by wide thruster housings and
+                  | broad engine nacelles on each side. Relentless pursuit, no frills.
+
+  RAVAGER-B       | Faction: Light Green
+
+  PREDATOR        | Faction: Red  | AI: Interceptor
+                  | Aggressive inverted-V silhouette. Everything about it reads fast — sharp
+                  | angles, forward-raked profile, built to engage at range.
+
+  PREDATOR-B      | Faction: Blue
+
+  STALKER         | Faction: Red  | AI: Interceptor
+                  | Compact destroyer form factor with small shield vanes flanking each side.
+                  | Holds optimal engagement range and waits for the right moment.
+
+  STALKER-B       | Faction: Yellow & Pink
+
+  DECIMATOR       | Faction: Red  | AI: Interceptor
+                  | Aggressive compact fighter-drone profile. Small, dense, and purpose-built
+                  | for standoff engagement.
+
+  DECIMATOR-B     | Faction: Baby Blue
+
+
+SIZE: MEDIUM
+------------
+
+  PHANTOM         | Faction: Red  | AI: Interceptor
+                  | Elongated reverse-cone body with shielded side panels. Reads like a
+                  | drone launcher at this scale — compact for its class.
+
+  PHANTOM-B       | Faction: Light Green
+
+  INFERNAL        | Faction: Red  | AI: Interceptor
+                  | Broad mushroom-head or quarter-moon fuselage with spiked lateral wings.
+                  | Drone-like proportions that push the upper edge of medium class.
+
+  INFERNAL-B      | Faction: Yellow
+
+
+SIZE: LARGE
+-----------
+
+  SCOURGE         | Faction: Red  | AI: Chase
+                  | Forward spine spike with side shield vanes. Intimidating head-on profile.
+
+  SCOURGE-B       | Faction: Yellow
+
+  CORSAIR         | Faction: Red  | AI: Interceptor
+                  | Wide inverted wings that converge to a sharp forward point. Upswept
+                  | inverted-V tail fin. Clean, predatory lines.
+
+  CORSAIR-B       | Faction: Purple
+
+  VENOM           | Faction: Red  | AI: Interceptor
+                  | Large drone-style frame with long shield-type wings and trailing spikes
+                  | off the tail. Built for sustained standoff engagement.
+
+  VENOM-B         | Faction: Purple
+
+  MARAUDER        | Faction: Red  | AI: Interceptor
+                  | Heavier evolution of the Venom. Retains the long shield wings but adds
+                  | twin forward spikes off the nose for close-range deterrence.
+
+  MARAUDER-B      | Faction: Yellow
+
+
+SIZE: HUGE
+----------
+
+  HARBINGER       | Faction: Red  | AI: Interceptor
+                  | Massive brick-form hull with multi-segment shield wings integrated
+                  | directly into the body structure. A moving fortress.
+
+  HARBINGER-B     | Faction: Yellow
+
+
+======================================
+NOTES
+------
+  AI Types:
+    Chase        — closes directly on target, no standoff preference
+    Interceptor  — maintains optimal engagement range; brakes and reverses to hold position
+
+  Variant hulls (suffix -B) share the base silhouette with alternate faction colors.
+  Stats and AI type may differ from the primary variant.
