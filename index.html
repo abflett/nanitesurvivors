@@ -2,17 +2,36 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/png" href="./favicon.png" />
+        <link rel="icon" href="favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="manifest" href="site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
+        <meta name="theme-color" content="#010207" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/gen-bg.jpg" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/menu-bg-tl.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/menu-bg-tr.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/menu-bg-bl.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/menu-bg-br.png" fetchpriority="high" />
+        <link rel="preload" as="image" href="assets/scene-backgrounds/menu/title-prop.png" fetchpriority="high" />
+        <link rel="stylesheet" href="style.css" />
         <title>Nanite Survivors</title>
-      <script type="module" crossorigin src="./assets/index-CYhJIJwZ.js"></script>
+      <script type="module" crossorigin src="./assets/index-Cya9NU80.js"></script>
       <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-CDAxGEFR.js">
-      <link rel="modulepreload" crossorigin href="./assets/phaser-3J1wgOfR.js">
+      <link rel="modulepreload" crossorigin href="./assets/phaser-BPUXgqsV.js">
     </head>
 
     <body>
+        <div id="boot-frame" aria-hidden="true">
+            <div class="boot-frame__bg"></div>
+            <img class="boot-frame__corner boot-frame__corner--tl" src="assets/scene-backgrounds/menu/menu-bg-tl.png" alt="" />
+            <img class="boot-frame__corner boot-frame__corner--tr" src="assets/scene-backgrounds/menu/menu-bg-tr.png" alt="" />
+            <img class="boot-frame__corner boot-frame__corner--bl" src="assets/scene-backgrounds/menu/menu-bg-bl.png" alt="" />
+            <img class="boot-frame__corner boot-frame__corner--br" src="assets/scene-backgrounds/menu/menu-bg-br.png" alt="" />
+            <img class="boot-frame__title" src="assets/scene-backgrounds/menu/title-prop.png" alt="" />
+            <div class="boot-frame__prompt">Loading...</div>
+        </div>
         <div id="root"></div>
     </body>
 </html>
-

@@ -1,0 +1,35 @@
+{
+  "seed": 88421,
+  "palette": {
+    "white": "#fff9d8",
+    "yellow": "#ffc84a",
+    "orange": "#ff7733",
+    "red": "#ff3300",
+    "ember": "#ffaa44",
+    "smoke": "#3d2419",
+    "soot": "#100806"
+  },
+  "sizes": {
+    "small": {
+      "frameSize": 64,
+      "frames": 16,
+      "radius": 24,
+      "durationMs": 220,
+      "file": "impact-explosion-small.png"
+    },
+    "large": {
+      "frameSize": 96,
+      "frames": 18,
+      "radius": 42,
+      "durationMs": 300,
+      "file": "impact-explosion-large.png"
+    },
+    "breach": {
+      "frameSize": 160,
+      "frames": 20,
+      "radius": 74,
+      "durationMs": 420,
+      "file": "impact-explosion-breach.png"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "atlas": "enemy-thruster-atlas.png",
+  "frameWidth": 160,
+  "frameHeight": 96,
+  "framesPerWidth": 16,
+  "widthRows": 16,
+  "layout": "rows are thruster mount widths 1..maxWidth, columns are animation frames",
+  "anchor": {
+    "description": "right-center nozzle anchor; set sprite origin to these normalized values",
+    "originX": 0.82,
+    "originY": 0.5
+  },
+  "sourceParity": {
+    "emitter": "src/game/presentation/fx/ShipThrusterEmitterFx.ts",
+    "config": "src/game/content/config/fx.ts",
+    "tint": "#ff5511",
+    "streamLengthMs": 300,
+    "streamVariation": 1,
+    "density": 1,
+    "coneSpread": 1,
+    "particleSize": 4,
+    "particleAspect": 2.3,
+    "emitFrequencyMs": 16
+  },
+  "frameFor": {
+    "width": "clamp(round(mount.width), 1, widthRows)",
+    "frame": "animationFrame % framesPerWidth",
+    "index": "(width - 1) * framesPerWidth + frame"
+  },
+  "seed": 57329
+}

@@ -1,0 +1,171 @@
+{
+  "frames": {
+    "fighter-brokkr-core": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 112
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 74,
+        "h": 112
+      },
+      "sourceSize": {
+        "w": 74,
+        "h": 112
+      },
+      "piece": "core",
+      "padding": 1,
+      "originalSourceSize": {
+        "w": 72,
+        "h": 138
+      },
+      "originalSpriteSourceSize": {
+        "x": -1,
+        "y": 0,
+        "w": 74,
+        "h": 112
+      }
+    },
+    "fighter-brokkr-thruster": {
+      "frame": {
+        "x": 0,
+        "y": 112,
+        "w": 48,
+        "h": 86
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 86
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 86
+      },
+      "piece": "thruster",
+      "padding": 1,
+      "originalSourceSize": {
+        "w": 47,
+        "h": 129
+      },
+      "originalSpriteSourceSize": {
+        "x": -1,
+        "y": 0,
+        "w": 48,
+        "h": 86
+      }
+    },
+    "fighter-brokkr-weapon-housing": {
+      "frame": {
+        "x": 48,
+        "y": 112,
+        "w": 32,
+        "h": 82
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 82
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 82
+      },
+      "piece": "weapon-housing",
+      "padding": 1,
+      "originalSourceSize": {
+        "w": 30,
+        "h": 107
+      },
+      "originalSpriteSourceSize": {
+        "x": -1,
+        "y": 0,
+        "w": 32,
+        "h": 82
+      }
+    },
+    "fighter-brokkr-wing": {
+      "frame": {
+        "x": 0,
+        "y": 198,
+        "w": 42,
+        "h": 53
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 42,
+        "h": 53
+      },
+      "sourceSize": {
+        "w": 42,
+        "h": 53
+      },
+      "piece": "wing",
+      "padding": 1,
+      "originalSourceSize": {
+        "w": 41,
+        "h": 73
+      },
+      "originalSpriteSourceSize": {
+        "x": -1,
+        "y": 0,
+        "w": 42,
+        "h": 53
+      }
+    }
+  },
+  "meta": {
+    "app": "Nanite Survivors generated wreckage POC",
+    "image": "w-fighter-brokkr.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 80,
+      "h": 251
+    },
+    "scale": "1"
+  },
+  "wreckage": {
+    "sourceHull": "hulls/fighter-brokkr.png",
+    "paletteSource": "hulls/fighter-brokkr.png",
+    "paletteFormat": "indexed PNG, 256-entry PLTE/tRNS, transparent index 0",
+    "description": "Runtime atlas for Brokkr wreckage POC. Four cropped component frames with 1px transparent padding.",
+    "pieces": [
+      {
+        "id": "fighter-brokkr-core",
+        "piece": "core",
+        "frame": "fighter-brokkr-core"
+      },
+      {
+        "id": "fighter-brokkr-thruster",
+        "piece": "thruster",
+        "frame": "fighter-brokkr-thruster"
+      },
+      {
+        "id": "fighter-brokkr-weapon-housing",
+        "piece": "weapon-housing",
+        "frame": "fighter-brokkr-weapon-housing"
+      },
+      {
+        "id": "fighter-brokkr-wing",
+        "piece": "wing",
+        "frame": "fighter-brokkr-wing"
+      }
+    ],
+    "runtimeHotTint": "#ff7a24"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "key": "shard-flak-atlas",
+  "frameWidth": 24,
+  "frameHeight": 24,
+  "frames": 12,
+  "loopMs": 360,
+  "seed": 30491,
+  "colorVariants": [
+    {
+      "name": "player",
+      "key": "shard-flak-atlas-player",
+      "file": "assets/projectiles/shard-flak-atlas-player.png",
+      "colors": {
+        "shadow": "#09244a",
+        "mid": "#2f8fff",
+        "hot": "#e9fbff",
+        "rim": "#7fe6ff",
+        "spark": "#b8f7ff"
+      }
+    },
+    {
+      "name": "enemy",
+      "key": "shard-flak-atlas-enemy",
+      "file": "assets/projectiles/shard-flak-atlas-enemy.png",
+      "colors": {
+        "shadow": "#3a1109",
+        "mid": "#ff5b2f",
+        "hot": "#ffedbc",
+        "rim": "#ffa04d",
+        "spark": "#ffd78a"
+      }
+    }
+  ],
+  "bakesRotation": false,
+  "runtimeOrientation": "right-facing +X projectile axis",
+  "concept": {
+    "body": "jagged nanite-metal shard flipping in flight",
+    "fragments": "small orbiting flak chips and spark ring fragments",
+    "tintPolicy": "player and enemy colors are baked into variant atlases"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "key": "data-fragment-atlas",
+  "file": "assets/data-fragment/data-fragment-atlas.png",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "frames": 24,
+  "loopMs": 1600,
+  "seed": 12491,
+  "palette": {
+    "violet": "#8a5cff",
+    "magenta": "#ff4fd8",
+    "teal": "#43ffd6",
+    "archiveGreen": "#79ff9d",
+    "hot": "#f9ffff",
+    "shadow": "#150629",
+    "tintPolicy": "baked color; runtime tint disabled"
+  },
+  "concept": {
+    "structure": "rotating broken crystal wireframe",
+    "mood": [
+      "corrupted hologram",
+      "fragmented AI memory",
+      "broken transmission",
+      "blueprint projection",
+      "encrypted archive",
+      "shattered crystal data storage"
+    ],
+    "edges": 19,
+    "shards": 16,
+    "loopMs": 1600
+  }
+}

@@ -1,9 +1,36 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("assets/fonts/roboto-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("assets/fonts/roboto-symbols.woff2") format("woff2");
+    unicode-range: U+2190, U+2192, U+2194-2199, U+25A0-27BF, U+2B00-2BFF;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+    src: url("assets/fonts/roboto-mono-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
     margin: 0;
     padding: 0;
     color: rgba(255, 255, 255, 0.87);
-    background: #010207 url("/assets/gen-bg.jpg") center / cover no-repeat fixed;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #010207;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 html,
@@ -39,34 +66,64 @@ body,
     filter: contrast(1.05) saturate(1.2) brightness(1.2);
 }
 
-.spritePosition {
-    margin: 10px 0 0 10px;
-    font-size: 0.8em;
+/*
+ * Pre-React boot frame: paints the menu composition (gen-bg + 4 corner props
+ * + centered title) before the JS bundle runs, so the HTML→React handoff is
+ * pixel-identical with MenuSceneFrame and there is no popin. Hidden via the
+ * .react-ready class once MenuSceneFrame mounts.
+ */
+#boot-frame {
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    overflow: hidden;
+    pointer-events: none;
 }
 
-.button {
-    width: 140px;
-    margin: 10px;
-    padding: 10px;
-    background-color: #010207;
-    color: rgba(255, 255, 255, 0.87);
-    border: 1px solid rgba(255, 255, 255, 0.87);
-    cursor: pointer;
-    transition: all 0.3s;
+.boot-frame__bg {
+    position: absolute;
+    inset: 0;
+    background: url("assets/scene-backgrounds/menu/gen-bg.jpg") center / cover no-repeat;
+}
 
-    &:hover {
-        border: 1px solid #0ec3c9;
-        color: #0ec3c9;
-    }
+.boot-frame__corner {
+    position: absolute;
+    width: 42vmin;
+    height: auto;
+    user-select: none;
+    pointer-events: none;
+}
 
-    &:active {
-        background-color: #0ec3c9;
-    }
+.boot-frame__corner--tl { top: 0; left: 0; }
+.boot-frame__corner--tr { top: 0; right: 0; }
+.boot-frame__corner--bl { bottom: 0; left: 0; }
+.boot-frame__corner--br { bottom: 0; right: 0; }
 
-    /* Disabled styles */
-    &:disabled {
-        cursor: not-allowed;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        color: rgba(255, 255, 255, 0.3);
-    }
+.boot-frame__title {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    width: 54vmin;
+    height: auto;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Mirrors the StartScreen prompt: bottom-anchored, 8vh up, same color/size. */
+.boot-frame__prompt {
+    position: absolute;
+    bottom: 8vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #cce8f1;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2.45vmin;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+body.react-ready #boot-frame {
+    display: none;
 }
